@@ -11,7 +11,39 @@
 		842B4808258687F400D3F9E8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B4807258687F400D3F9E8 /* ViewController.swift */; };
 		842B480A258687F500D3F9E8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 842B4809258687F500D3F9E8 /* Assets.xcassets */; };
 		842B480D258687F500D3F9E8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 842B480B258687F500D3F9E8 /* Main.storyboard */; };
+		842B4835258688AE00D3F9E8 /* APACHE20 in Resources */ = {isa = PBXBuildFile; fileRef = 842B4827258688AD00D3F9E8 /* APACHE20 */; };
+		842B4836258688AE00D3F9E8 /* README.asciidoc in Resources */ = {isa = PBXBuildFile; fileRef = 842B4828258688AD00D3F9E8 /* README.asciidoc */; };
+		842B4837258688AE00D3F9E8 /* GPL2 in Resources */ = {isa = PBXBuildFile; fileRef = 842B482C258688AD00D3F9E8 /* GPL2 */; };
+		842B4838258688AE00D3F9E8 /* usb_libusb10.c in Sources */ = {isa = PBXBuildFile; fileRef = 842B482E258688AD00D3F9E8 /* usb_libusb10.c */; };
+		842B4839258688AE00D3F9E8 /* cameras.c in Sources */ = {isa = PBXBuildFile; fileRef = 842B482F258688AE00D3F9E8 /* cameras.c */; };
+		842B483A258688AE00D3F9E8 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 842B4831258688AE00D3F9E8 /* core.c */; };
+		842B483B258688AE00D3F9E8 /* tilt.c in Sources */ = {isa = PBXBuildFile; fileRef = 842B4833258688AE00D3F9E8 /* tilt.c */; };
+		842B4848258688B700D3F9E8 /* AUTHORS in Resources */ = {isa = PBXBuildFile; fileRef = 842B483E258688B700D3F9E8 /* AUTHORS */; };
+		842B4849258688B700D3F9E8 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 842B4841258688B700D3F9E8 /* COPYING */; };
+		842B484A258688B700D3F9E8 /* libusb-1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B4843258688B700D3F9E8 /* libusb-1.0.dylib */; };
+		842B484B258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B4844258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib */; };
+		842B484C258688B700D3F9E8 /* libusb-1.0.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B4845258688B700D3F9E8 /* libusb-1.0.0.dylib */; };
+		842B484D258688B800D3F9E8 /* libusb-1.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 842B4846258688B700D3F9E8 /* libusb-1.0.a */; };
+		842B484E258688B800D3F9E8 /* libusb-1.0.la in Resources */ = {isa = PBXBuildFile; fileRef = 842B4847258688B700D3F9E8 /* libusb-1.0.la */; };
+		842B4855258689E800D3F9E8 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 842B4845258688B700D3F9E8 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		842B485925868ADB00D3F9E8 /* Kinect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B485825868ADB00D3F9E8 /* Kinect.swift */; };
+		84AB213A259D3B0300F3C18C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AB2139259D3B0300F3C18C /* SceneKit.framework */; };
+		84AB213C259D3EC100F3C18C /* KinectPreview.scn in Resources */ = {isa = PBXBuildFile; fileRef = 84AB213B259D3EC100F3C18C /* KinectPreview.scn */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		842B4856258689E800D3F9E8 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				842B4855258689E800D3F9E8 /* libusb-1.0.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		842B4802258687F400D3F9E8 /* holopointer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holopointer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +53,29 @@
 		842B480C258687F500D3F9E8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		842B480E258687F500D3F9E8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		842B480F258687F500D3F9E8 /* holopointer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = holopointer.entitlements; sourceTree = "<group>"; };
+		842B4827258688AD00D3F9E8 /* APACHE20 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = APACHE20; sourceTree = "<group>"; };
+		842B4828258688AD00D3F9E8 /* README.asciidoc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.asciidoc; sourceTree = "<group>"; };
+		842B482A258688AD00D3F9E8 /* libfreenect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libfreenect.h; sourceTree = "<group>"; };
+		842B482B258688AD00D3F9E8 /* libfreenect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = libfreenect.hpp; sourceTree = "<group>"; };
+		842B482C258688AD00D3F9E8 /* GPL2 */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = GPL2; sourceTree = "<group>"; };
+		842B482E258688AD00D3F9E8 /* usb_libusb10.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = usb_libusb10.c; sourceTree = "<group>"; };
+		842B482F258688AE00D3F9E8 /* cameras.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cameras.c; sourceTree = "<group>"; };
+		842B4830258688AE00D3F9E8 /* usb_libusb10.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = usb_libusb10.h; sourceTree = "<group>"; };
+		842B4831258688AE00D3F9E8 /* core.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = core.c; sourceTree = "<group>"; };
+		842B4832258688AE00D3F9E8 /* freenect_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = freenect_internal.h; sourceTree = "<group>"; };
+		842B4833258688AE00D3F9E8 /* tilt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tilt.c; sourceTree = "<group>"; };
+		842B483E258688B700D3F9E8 /* AUTHORS */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AUTHORS; sourceTree = "<group>"; };
+		842B4840258688B700D3F9E8 /* libusb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = libusb.h; sourceTree = "<group>"; };
+		842B4841258688B700D3F9E8 /* COPYING */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = COPYING; sourceTree = "<group>"; };
+		842B4843258688B700D3F9E8 /* libusb-1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.dylib"; sourceTree = "<group>"; };
+		842B4844258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.1.0.dylib"; sourceTree = "<group>"; };
+		842B4845258688B700D3F9E8 /* libusb-1.0.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = "libusb-1.0.0.dylib"; sourceTree = "<group>"; };
+		842B4846258688B700D3F9E8 /* libusb-1.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = "libusb-1.0.a"; sourceTree = "<group>"; };
+		842B4847258688B700D3F9E8 /* libusb-1.0.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libusb-1.0.la"; sourceTree = "<group>"; };
+		842B485725868A6F00D3F9E8 /* holopointer-Swift-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "holopointer-Swift-Bridge.h"; sourceTree = "<group>"; };
+		842B485825868ADB00D3F9E8 /* Kinect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinect.swift; sourceTree = "<group>"; };
+		84AB2139259D3B0300F3C18C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
+		84AB213B259D3EC100F3C18C /* KinectPreview.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = KinectPreview.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +83,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B484D258688B800D3F9E8 /* libusb-1.0.a in Frameworks */,
+				842B484C258688B700D3F9E8 /* libusb-1.0.0.dylib in Frameworks */,
+				84AB213A259D3B0300F3C18C /* SceneKit.framework in Frameworks */,
+				842B484B258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib in Frameworks */,
+				842B484A258688B700D3F9E8 /* libusb-1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +99,7 @@
 			children = (
 				842B4804258687F400D3F9E8 /* holopointer */,
 				842B4803258687F400D3F9E8 /* Products */,
+				84AB2138259D3B0300F3C18C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,14 +114,100 @@
 		842B4804258687F400D3F9E8 /* holopointer */ = {
 			isa = PBXGroup;
 			children = (
+				842B483D258688B700D3F9E8 /* libusb-1.0 */,
+				842B4825258688AD00D3F9E8 /* kinect */,
 				842B4805258687F400D3F9E8 /* AppDelegate.swift */,
 				842B4807258687F400D3F9E8 /* ViewController.swift */,
+				84AB213B259D3EC100F3C18C /* KinectPreview.scn */,
 				842B4809258687F500D3F9E8 /* Assets.xcassets */,
 				842B480B258687F500D3F9E8 /* Main.storyboard */,
 				842B480E258687F500D3F9E8 /* Info.plist */,
 				842B480F258687F500D3F9E8 /* holopointer.entitlements */,
+				842B485725868A6F00D3F9E8 /* holopointer-Swift-Bridge.h */,
+				842B485825868ADB00D3F9E8 /* Kinect.swift */,
 			);
 			path = holopointer;
+			sourceTree = "<group>";
+		};
+		842B4825258688AD00D3F9E8 /* kinect */ = {
+			isa = PBXGroup;
+			children = (
+				842B4827258688AD00D3F9E8 /* APACHE20 */,
+				842B4828258688AD00D3F9E8 /* README.asciidoc */,
+				842B4829258688AD00D3F9E8 /* include */,
+				842B482C258688AD00D3F9E8 /* GPL2 */,
+				842B482D258688AD00D3F9E8 /* src */,
+			);
+			path = kinect;
+			sourceTree = "<group>";
+		};
+		842B4829258688AD00D3F9E8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				842B482A258688AD00D3F9E8 /* libfreenect.h */,
+				842B482B258688AD00D3F9E8 /* libfreenect.hpp */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		842B482D258688AD00D3F9E8 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				842B482E258688AD00D3F9E8 /* usb_libusb10.c */,
+				842B482F258688AE00D3F9E8 /* cameras.c */,
+				842B4830258688AE00D3F9E8 /* usb_libusb10.h */,
+				842B4831258688AE00D3F9E8 /* core.c */,
+				842B4832258688AE00D3F9E8 /* freenect_internal.h */,
+				842B4833258688AE00D3F9E8 /* tilt.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		842B483D258688B700D3F9E8 /* libusb-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				842B483E258688B700D3F9E8 /* AUTHORS */,
+				842B483F258688B700D3F9E8 /* include */,
+				842B4841258688B700D3F9E8 /* COPYING */,
+				842B4842258688B700D3F9E8 /* lib */,
+			);
+			path = "libusb-1.0";
+			sourceTree = "<group>";
+		};
+		842B483F258688B700D3F9E8 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				842B48502586892300D3F9E8 /* libusb-1.0 */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		842B4842258688B700D3F9E8 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				842B4843258688B700D3F9E8 /* libusb-1.0.dylib */,
+				842B4844258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib */,
+				842B4845258688B700D3F9E8 /* libusb-1.0.0.dylib */,
+				842B4846258688B700D3F9E8 /* libusb-1.0.a */,
+				842B4847258688B700D3F9E8 /* libusb-1.0.la */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		842B48502586892300D3F9E8 /* libusb-1.0 */ = {
+			isa = PBXGroup;
+			children = (
+				842B4840258688B700D3F9E8 /* libusb.h */,
+			);
+			path = "libusb-1.0";
+			sourceTree = "<group>";
+		};
+		84AB2138259D3B0300F3C18C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84AB2139259D3B0300F3C18C /* SceneKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -73,6 +220,8 @@
 				842B47FE258687F400D3F9E8 /* Sources */,
 				842B47FF258687F400D3F9E8 /* Frameworks */,
 				842B4800258687F400D3F9E8 /* Resources */,
+				842B4856258689E800D3F9E8 /* Embed Libraries */,
+				842B48522586895000D3F9E8 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -120,19 +269,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B484E258688B800D3F9E8 /* libusb-1.0.la in Resources */,
+				84AB213C259D3EC100F3C18C /* KinectPreview.scn in Resources */,
+				842B4849258688B700D3F9E8 /* COPYING in Resources */,
+				842B4848258688B700D3F9E8 /* AUTHORS in Resources */,
+				842B4835258688AE00D3F9E8 /* APACHE20 in Resources */,
+				842B4836258688AE00D3F9E8 /* README.asciidoc in Resources */,
 				842B480A258687F500D3F9E8 /* Assets.xcassets in Resources */,
 				842B480D258687F500D3F9E8 /* Main.storyboard in Resources */,
+				842B4837258688AE00D3F9E8 /* GPL2 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		842B48522586895000D3F9E8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "install_name_tool -change /usr/local/lib/libusb-1.0.0.dylib @executable_path/../Frameworks/libusb-1.0.0.dylib ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS/${TARGET_NAME}\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		842B47FE258687F400D3F9E8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				842B483A258688AE00D3F9E8 /* core.c in Sources */,
+				842B4838258688AE00D3F9E8 /* usb_libusb10.c in Sources */,
 				842B4808258687F400D3F9E8 /* ViewController.swift in Sources */,
+				842B4839258688AE00D3F9E8 /* cameras.c in Sources */,
+				842B483B258688AE00D3F9E8 /* tilt.c in Sources */,
+				842B485925868ADB00D3F9E8 /* Kinect.swift in Sources */,
 				842B4806258687F400D3F9E8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,17 +453,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = holopointer/holopointer.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3F94936UV5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "holopointer/libusb-1.0/include";
 				INFOPLIST_FILE = holopointer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/holopointer/libusb-1.0/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.holopointer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "holopointer/holopointer-Swift-Bridge.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -293,17 +481,24 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = holopointer/holopointer.entitlements;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 3F94936UV5;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = "holopointer/libusb-1.0/include";
 				INFOPLIST_FILE = holopointer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/holopointer/libusb-1.0/lib",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.holopointer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "holopointer/holopointer-Swift-Bridge.h";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
