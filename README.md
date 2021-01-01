@@ -21,3 +21,15 @@ It's cool I guess.
 ## Contents
 
 Under holopointer/libusb-1.0 is a version of libusb that happens to work with the Kinects. This is included as a precompiled library for convenience. It's probably veeeeery old. Also, under holopointer/kinect is a slightly modified version of libfreenect's kinect component. There's a couple of new methods to make alloc/dealloc possible through Swift. Both of these are pulled almost as-is from the cocoaKinect project.
+
+## Importing into other apps
+
+Here's a simple combination of ReadGeo and Scanline to display the usdc sequence in Nuke:
+
+In the ReadGeo node, point to one of the .usdc files and change the frame number (e.g. .0001) to #### (e.g. out.####.usdc)
+
+![nuke_comp](images/nuke_comp.png)
+
+You should get a friendly-sized point cloud in the viewport which can be easily used for rendering or particle emitting or whatever.
+
+![nuke_comp](images/nuke_viewport.png)
