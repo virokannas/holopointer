@@ -9,5 +9,6 @@
 #define holopointer_Swift_Bridge_h
 
 #include "libfreenect.h"
+#include "USDZExporter.h"
 
 #endif /* holopointer_Swift_Bridge_h */

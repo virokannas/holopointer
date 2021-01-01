@@ -707,14 +707,14 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="holopointer" customModuleProvider="target" sceneMemberID="viewController">
                     <stackView key="view" distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" id="muL-Ao-05h">
-                        <rect key="frame" x="0.0" y="0.0" width="1218" height="492"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1241" height="545"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fill" orientation="vertical" alignment="leading" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SFQ-al-zKQ">
-                                <rect key="frame" x="4" y="0.0" width="321" height="488"/>
+                                <rect key="frame" x="4" y="24" width="344" height="517"/>
                                 <subviews>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Eg3-jY-Jde">
-                                        <rect key="frame" x="0.0" y="248" width="320" height="240"/>
+                                        <rect key="frame" x="0.0" y="277" width="320" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="320" id="LTv-7M-ikb"/>
                                             <constraint firstAttribute="height" constant="240" id="Z57-rt-rXo"/>
@@ -722,25 +722,65 @@
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="HaI-Ic-K0N"/>
                                     </imageView>
                                     <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nCv-lA-6Ys">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                                        <rect key="frame" x="0.0" y="29" width="320" height="240"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="240" id="3DK-vX-X66"/>
                                             <constraint firstAttribute="width" constant="320" id="Ycq-VO-izL"/>
                                         </constraints>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="dOb-cX-qkW"/>
                                     </imageView>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FGi-5V-UXc">
+                                        <rect key="frame" x="0.0" y="0.0" width="344" height="21"/>
+                                        <subviews>
+                                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Fiz-3T-8aP">
+                                                <rect key="frame" x="0.0" y="0.0" width="256" height="21"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" placeholderString="filename" drawsBackground="YES" id="Wru-Hx-UnQ">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Q2R-72-fQ2">
+                                                <rect key="frame" x="257" y="-6" width="94" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="80" id="l9h-p3-Evf"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="push" title="⏺" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="blv-7a-M00">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="record:" target="XfG-lQ-9wD" id="3Rl-Me-jpK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="FGi-5V-UXc" secondAttribute="trailing" id="JsO-Cj-qbL"/>
+                                    <constraint firstItem="FGi-5V-UXc" firstAttribute="leading" secondItem="SFQ-al-zKQ" secondAttribute="leading" id="ddM-7q-lY2"/>
+                                </constraints>
                                 <visibilityPriorities>
+                                    <integer value="1000"/>
                                     <integer value="1000"/>
                                     <integer value="1000"/>
                                 </visibilityPriorities>
                                 <customSpacing>
                                     <real value="3.4028234663852886e+38"/>
                                     <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
                             <slider horizontalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="iUW-5Q-asz">
-                                <rect key="frame" x="331" y="18" width="24" height="472"/>
+                                <rect key="frame" x="354" y="71" width="24" height="472"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="464" id="3Gg-Tf-oKH"/>
                                 </constraints>
@@ -750,7 +790,7 @@
                                 </connections>
                             </slider>
                             <sceneView allowsCameraControl="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gxd-0e-esF">
-                                <rect key="frame" x="361" y="8" width="853" height="480"/>
+                                <rect key="frame" x="384" y="61" width="853" height="480"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="480" id="eor-jT-zdf"/>
                                     <constraint firstAttribute="width" secondItem="gxd-0e-esF" secondAttribute="height" multiplier="16:9" id="oEZ-T3-2Nf"/>
@@ -773,6 +813,8 @@
                     <connections>
                         <outlet property="colorImage" destination="nCv-lA-6Ys" id="h06-Ji-aDg"/>
                         <outlet property="depthImage" destination="Eg3-jY-Jde" id="X74-HN-UK8"/>
+                        <outlet property="fileNameField" destination="Fiz-3T-8aP" id="pAa-eM-JlJ"/>
+                        <outlet property="recButton" destination="Q2R-72-fQ2" id="9VC-QM-q0Y"/>
                         <outlet property="sceneView" destination="gxd-0e-esF" id="44w-Fw-bSx"/>
                         <outlet property="tiltSlider" destination="iUW-5Q-asz" id="Okk-KG-HGi"/>
                     </connections>

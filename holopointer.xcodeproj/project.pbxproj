@@ -27,6 +27,21 @@
 		842B484E258688B800D3F9E8 /* libusb-1.0.la in Resources */ = {isa = PBXBuildFile; fileRef = 842B4847258688B700D3F9E8 /* libusb-1.0.la */; };
 		842B4855258689E800D3F9E8 /* libusb-1.0.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 842B4845258688B700D3F9E8 /* libusb-1.0.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		842B485925868ADB00D3F9E8 /* Kinect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 842B485825868ADB00D3F9E8 /* Kinect.swift */; };
+		84809C1A259E94AD00659475 /* libboost_program_options.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C12259E94AC00659475 /* libboost_program_options.dylib */; };
+		84809C1B259E94AD00659475 /* libz.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C13259E94AC00659475 /* libz.a */; };
+		84809C1C259E94AD00659475 /* libtbb_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C14259E94AC00659475 /* libtbb_debug.a */; };
+		84809C1D259E94AD00659475 /* libboost_regex.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C15259E94AD00659475 /* libboost_regex.dylib */; };
+		84809C1E259E94AD00659475 /* libtbbmalloc_debug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C16259E94AD00659475 /* libtbbmalloc_debug.a */; };
+		84809C1F259E94AD00659475 /* libtbb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C17259E94AD00659475 /* libtbb.a */; };
+		84809C20259E94AD00659475 /* libtbbmalloc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C18259E94AD00659475 /* libtbbmalloc.a */; };
+		84809C21259E94AD00659475 /* libz.1.2.11.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C19259E94AD00659475 /* libz.1.2.11.dylib */; };
+		84809C22259E94C100659475 /* libboost_program_options.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 84809C12259E94AC00659475 /* libboost_program_options.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		84809C23259E94C200659475 /* libboost_regex.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 84809C15259E94AD00659475 /* libboost_regex.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		84809C25259E954600659475 /* USDPointCloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84809C24259E954600659475 /* USDPointCloud.swift */; };
+		84809C27259E9A6100659475 /* USDZExporter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 84809C26259E9A6100659475 /* USDZExporter.mm */; };
+		84809C2A259EA8BC00659475 /* libusd_ms.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84809C29259EA8BC00659475 /* libusd_ms.dylib */; };
+		84809C2B259EA8C200659475 /* libusd_ms.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 84809C29259EA8BC00659475 /* libusd_ms.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		84809C2D259FAB6C00659475 /* libz.1.2.11.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 84809C19259E94AD00659475 /* libz.1.2.11.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		84AB213A259D3B0300F3C18C /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AB2139259D3B0300F3C18C /* SceneKit.framework */; };
 		84AB213C259D3EC100F3C18C /* KinectPreview.scn in Resources */ = {isa = PBXBuildFile; fileRef = 84AB213B259D3EC100F3C18C /* KinectPreview.scn */; };
 /* End PBXBuildFile section */
@@ -38,7 +53,11 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				84809C22259E94C100659475 /* libboost_program_options.dylib in Embed Libraries */,
+				84809C23259E94C200659475 /* libboost_regex.dylib in Embed Libraries */,
 				842B4855258689E800D3F9E8 /* libusb-1.0.0.dylib in Embed Libraries */,
+				84809C2B259EA8C200659475 /* libusd_ms.dylib in Embed Libraries */,
+				84809C2D259FAB6C00659475 /* libz.1.2.11.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -74,6 +93,18 @@
 		842B4847258688B700D3F9E8 /* libusb-1.0.la */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "libusb-1.0.la"; sourceTree = "<group>"; };
 		842B485725868A6F00D3F9E8 /* holopointer-Swift-Bridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "holopointer-Swift-Bridge.h"; sourceTree = "<group>"; };
 		842B485825868ADB00D3F9E8 /* Kinect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kinect.swift; sourceTree = "<group>"; };
+		84809C12259E94AC00659475 /* libboost_program_options.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_program_options.dylib; path = USDMonolithic/lib/libboost_program_options.dylib; sourceTree = SOURCE_ROOT; };
+		84809C13259E94AC00659475 /* libz.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libz.a; path = USDMonolithic/lib/libz.a; sourceTree = SOURCE_ROOT; };
+		84809C14259E94AC00659475 /* libtbb_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbb_debug.a; path = USDMonolithic/lib/libtbb_debug.a; sourceTree = SOURCE_ROOT; };
+		84809C15259E94AD00659475 /* libboost_regex.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_regex.dylib; path = USDMonolithic/lib/libboost_regex.dylib; sourceTree = SOURCE_ROOT; };
+		84809C16259E94AD00659475 /* libtbbmalloc_debug.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbbmalloc_debug.a; path = USDMonolithic/lib/libtbbmalloc_debug.a; sourceTree = SOURCE_ROOT; };
+		84809C17259E94AD00659475 /* libtbb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbb.a; path = USDMonolithic/lib/libtbb.a; sourceTree = SOURCE_ROOT; };
+		84809C18259E94AD00659475 /* libtbbmalloc.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libtbbmalloc.a; path = USDMonolithic/lib/libtbbmalloc.a; sourceTree = SOURCE_ROOT; };
+		84809C19259E94AD00659475 /* libz.1.2.11.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.11.dylib; path = USDMonolithic/lib/libz.1.2.11.dylib; sourceTree = SOURCE_ROOT; };
+		84809C24259E954600659475 /* USDPointCloud.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USDPointCloud.swift; sourceTree = "<group>"; };
+		84809C26259E9A6100659475 /* USDZExporter.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = USDZExporter.mm; sourceTree = "<group>"; };
+		84809C28259E9A6B00659475 /* USDZExporter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; path = USDZExporter.h; sourceTree = "<group>"; };
+		84809C29259EA8BC00659475 /* libusd_ms.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libusd_ms.dylib; path = USDMonolithic/lib/libusd_ms.dylib; sourceTree = SOURCE_ROOT; };
 		84AB2139259D3B0300F3C18C /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		84AB213B259D3EC100F3C18C /* KinectPreview.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = KinectPreview.scn; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,10 +114,19 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84809C20259E94AD00659475 /* libtbbmalloc.a in Frameworks */,
+				84809C1F259E94AD00659475 /* libtbb.a in Frameworks */,
+				84809C1E259E94AD00659475 /* libtbbmalloc_debug.a in Frameworks */,
 				842B484D258688B800D3F9E8 /* libusb-1.0.a in Frameworks */,
+				84809C1D259E94AD00659475 /* libboost_regex.dylib in Frameworks */,
 				842B484C258688B700D3F9E8 /* libusb-1.0.0.dylib in Frameworks */,
+				84809C1C259E94AD00659475 /* libtbb_debug.a in Frameworks */,
+				84809C21259E94AD00659475 /* libz.1.2.11.dylib in Frameworks */,
+				84809C1A259E94AD00659475 /* libboost_program_options.dylib in Frameworks */,
+				84809C2A259EA8BC00659475 /* libusd_ms.dylib in Frameworks */,
 				84AB213A259D3B0300F3C18C /* SceneKit.framework in Frameworks */,
 				842B484B258688B700D3F9E8 /* libusb-1.0.0.1.0.dylib in Frameworks */,
+				84809C1B259E94AD00659475 /* libz.a in Frameworks */,
 				842B484A258688B700D3F9E8 /* libusb-1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -97,6 +137,7 @@
 		842B47F9258687F400D3F9E8 = {
 			isa = PBXGroup;
 			children = (
+				84809C11259E946200659475 /* USD */,
 				842B4804258687F400D3F9E8 /* holopointer */,
 				842B4803258687F400D3F9E8 /* Products */,
 				84AB2138259D3B0300F3C18C /* Frameworks */,
@@ -125,6 +166,9 @@
 				842B480F258687F500D3F9E8 /* holopointer.entitlements */,
 				842B485725868A6F00D3F9E8 /* holopointer-Swift-Bridge.h */,
 				842B485825868ADB00D3F9E8 /* Kinect.swift */,
+				84809C24259E954600659475 /* USDPointCloud.swift */,
+				84809C26259E9A6100659475 /* USDZExporter.mm */,
+				84809C28259E9A6B00659475 /* USDZExporter.h */,
 			);
 			path = holopointer;
 			sourceTree = "<group>";
@@ -202,6 +246,22 @@
 			path = "libusb-1.0";
 			sourceTree = "<group>";
 		};
+		84809C11259E946200659475 /* USD */ = {
+			isa = PBXGroup;
+			children = (
+				84809C29259EA8BC00659475 /* libusd_ms.dylib */,
+				84809C12259E94AC00659475 /* libboost_program_options.dylib */,
+				84809C15259E94AD00659475 /* libboost_regex.dylib */,
+				84809C14259E94AC00659475 /* libtbb_debug.a */,
+				84809C17259E94AD00659475 /* libtbb.a */,
+				84809C16259E94AD00659475 /* libtbbmalloc_debug.a */,
+				84809C18259E94AD00659475 /* libtbbmalloc.a */,
+				84809C19259E94AD00659475 /* libz.1.2.11.dylib */,
+				84809C13259E94AC00659475 /* libz.a */,
+			);
+			path = USD;
+			sourceTree = "<group>";
+		};
 		84AB2138259D3B0300F3C18C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,6 +282,7 @@
 				842B4800258687F400D3F9E8 /* Resources */,
 				842B4856258689E800D3F9E8 /* Embed Libraries */,
 				842B48522586895000D3F9E8 /* ShellScript */,
+				84809C2C259FAA1300659475 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -301,6 +362,23 @@
 			shellPath = /bin/sh;
 			shellScript = "install_name_tool -change /usr/local/lib/libusb-1.0.0.dylib @executable_path/../Frameworks/libusb-1.0.0.dylib ${TARGET_BUILD_DIR}/${TARGET_NAME}.app/Contents/MacOS/${TARGET_NAME}\n";
 		};
+		84809C2C259FAA1300659475 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ -e $TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME ]; then\n    for DYLIB in libboost_atomic libboost_date_time libboost_filesystem libboost_program_options libboost_regex libboost_system libboost_thread libusd_ms; do\n      install_name_tool -change @executable_path/$DYLIB.dylib @loader_path/../Frameworks/$DYLIB.dylib \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/MacOS/$PRODUCT_NAME\"\n    done\nfi\nrsync -a USDMonolithic/lib/usd \"$TARGET_BUILD_DIR/$TARGET_NAME.app/Contents/Frameworks/\"\n \n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -311,10 +389,12 @@
 				842B483A258688AE00D3F9E8 /* core.c in Sources */,
 				842B4838258688AE00D3F9E8 /* usb_libusb10.c in Sources */,
 				842B4808258687F400D3F9E8 /* ViewController.swift in Sources */,
+				84809C25259E954600659475 /* USDPointCloud.swift in Sources */,
 				842B4839258688AE00D3F9E8 /* cameras.c in Sources */,
 				842B483B258688AE00D3F9E8 /* tilt.c in Sources */,
 				842B485925868ADB00D3F9E8 /* Kinect.swift in Sources */,
 				842B4806258687F400D3F9E8 /* AppDelegate.swift in Sources */,
+				84809C27259E9A6100659475 /* USDZExporter.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,11 +533,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = holopointer/holopointer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "holopointer/libusb-1.0/include";
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					"holopointer/libusb-1.0/include",
+					USDMonolithic/include,
+				);
 				INFOPLIST_FILE = holopointer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -466,7 +550,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/holopointer/libusb-1.0/lib",
+					"$(PROJECT_DIR)/USDMonolithic/lib",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.holopointer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -481,11 +567,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = holopointer/holopointer.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
-				ENABLE_HARDENED_RUNTIME = YES;
-				HEADER_SEARCH_PATHS = "holopointer/libusb-1.0/include";
+				ENABLE_HARDENED_RUNTIME = NO;
+				HEADER_SEARCH_PATHS = (
+					"holopointer/libusb-1.0/include",
+					USDMonolithic/include,
+				);
 				INFOPLIST_FILE = holopointer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -494,7 +584,9 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/holopointer/libusb-1.0/lib",
+					"$(PROJECT_DIR)/USDMonolithic/lib",
 				);
+				OTHER_CODE_SIGN_FLAGS = "--deep";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ihihi.holopointer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -17,8 +17,12 @@ class ViewController: NSViewController {
     @IBOutlet var colorImage : NSImageView!
     @IBOutlet var tiltSlider : NSSlider!
     @IBOutlet var sceneView : SCNView!
+    @IBOutlet var fileNameField : NSTextField!
+    @IBOutlet var recButton : NSButton!
     var scene : SCNScene?
     var pointNode : SCNNode = SCNNode()
+    var isRecording : Bool = false
+    var frame : Int = 1
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +31,7 @@ class ViewController: NSViewController {
         scene?.rootNode.addChildNode(pointNode)
         pointNode.scale = SCNVector3(3.0, 3.0, -6.0)
         pointNode.position = SCNVector3(0, 0, -64.0)
+        fileNameField.stringValue = ""
     }
     
     override func viewWillDisappear() {
@@ -48,6 +53,21 @@ class ViewController: NSViewController {
     @IBAction func sliderChanged(_ : Any) {
         if let kine = self.kine {
             kine.tilt = self.tiltSlider.doubleValue
+        }
+    }
+    
+    @IBAction func record(_ : Any) {
+        if isRecording {
+            // stop
+            self.recButton.title = "⏺"
+            self.isRecording = false
+        } else {
+            // start
+            self.recButton.title = "⏹"
+            self.isRecording = true
+            if fileNameField.stringValue == "" {
+                fileNameField.stringValue = "/tmp/out.####.usdc"
+            }
         }
     }
     
@@ -73,6 +93,13 @@ class ViewController: NSViewController {
             mat.diffuse.contents = SCNVector4(1, 1, 1, 1)
             pointNode.geometry!.materials = [mat]
             pointNode.eulerAngles = SCNVector3((self.tiltSlider.doubleValue + 4.0) * 0.0174533, 0, 0)
+            if isRecording {
+                let framenum = String(format: "%04d", self.frame)
+                let filename = fileNameField.stringValue.replacingOccurrences(of: "####", with: framenum)
+                USDSwift.writePoints(toFile:filename, points:points, npoints:Int32(points.count))
+                self.recButton.title = "⏹ (\(self.frame))"
+                self.frame += 1
+            }
         }
     }
 }
