@@ -19,10 +19,13 @@ class ViewController: NSViewController {
     @IBOutlet var sceneView : SCNView!
     @IBOutlet var fileNameField : NSTextField!
     @IBOutlet var recButton : NSButton!
+    @objc dynamic var nearClip : Int = 0
+    @objc dynamic var farClip : Int = 2047
     var scene : SCNScene?
     var pointNode : SCNNode = SCNNode()
     var isRecording : Bool = false
     var frame : Int = 1
+    var take : Int = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,9 +67,12 @@ class ViewController: NSViewController {
         } else {
             // start
             self.recButton.title = "⏹"
+            self.take += 1
             self.isRecording = true
             if fileNameField.stringValue == "" {
-                fileNameField.stringValue = "/tmp/out.####.usdc"
+                fileNameField.stringValue = "/tmp/out_\(take).####.usdc"
+            } else {
+                fileNameField.stringValue = fileNameField.stringValue.replacingOccurrences(of: "_\(take-1)", with: "_\(take)")
             }
         }
     }
@@ -81,6 +87,8 @@ class ViewController: NSViewController {
             if let bimg = self.colorImg {
                 colorImage.image = NSImage(cgImage: bimg, size: NSSize(width: 640, height: 480))
             }
+            kine.nearClip = self.nearClip
+            kine.farClip = self.farClip
             let points = kine.readPoints(10000)
             let src = SCNGeometrySource(vertices: points)
             let elements = SCNGeometryElement(data: nil, primitiveType: .point, primitiveCount: points.count, bytesPerIndex: 4)

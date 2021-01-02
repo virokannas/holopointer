@@ -27,6 +27,8 @@ class Kinect {
     private var depthLock : NSLock = NSLock()
     private var colorMap : UnsafeMutableRawPointer
     private var colorLock : NSLock = NSLock()
+    var nearClip : Int = 0
+    var farClip : Int = 2047
     init() {
         // initialize MAX_POINTS random points
         for _ in 0 ..< Kinect.MAX_POINTS {
@@ -117,7 +119,7 @@ class Kinect {
                 maxval = Int(depth)
             }
             var z : Float = 0.0
-            if (depth < 2047) {
+            if (depth < farClip && depth > nearClip) {
                 z = 0.1236 * tanf(Float(depth) / 2842.5 + 1.1863)
                 //z = 1.0 / (-0.00307 * Float(depth) + 3.33) - 0.037
                 let zd = z - 10.0
