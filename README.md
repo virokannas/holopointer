@@ -14,6 +14,10 @@ Prerequisites:
 
 Before compiling the project in XCode, you'll first need to go to the project folder in Terminal and run the build_usd_monolithic.py script. This is so that I don't have to keep dragging an once-a-month-obsolete version of USD along with the project. If you're having trouble compiling it, I can make an archive of the app available, just drop me a message.
 
+#### I don't have CMake!
+
+You'll probably end up needing cmake at some point no matter what. If you don't like messing up your environment and like things neat and clean you can e.g. do a simple separate install of miniconda and cmake using [this gist](https://gist.github.com/simpassi/00f4e85323711d4b6f29f9f70e2fe754).
+
 ## Why?
 
 It's cool I guess.
